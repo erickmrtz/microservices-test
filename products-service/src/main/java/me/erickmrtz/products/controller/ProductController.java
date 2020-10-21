@@ -1,6 +1,7 @@
 package me.erickmrtz.products.controller;
 
 import com.sun.jersey.core.header.MediaTypes;
+import lombok.extern.slf4j.Slf4j;
 import me.erickmrtz.products.model.Product;
 import me.erickmrtz.products.service.IProductService;
 import me.erickmrtz.products.service.impl.ProductServiceImpl;

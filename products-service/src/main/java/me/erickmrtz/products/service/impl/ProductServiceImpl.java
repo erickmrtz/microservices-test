@@ -23,6 +23,6 @@ public class ProductServiceImpl implements IProductService {
 
     @Override
     public Product findOne(Long id) {
-        return productRepository.getOne(id);
+        return productRepository.findById(id).get();
     }
 }

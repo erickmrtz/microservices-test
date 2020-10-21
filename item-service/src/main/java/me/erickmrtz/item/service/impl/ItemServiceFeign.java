@@ -29,6 +29,6 @@ public class ItemServiceFeign implements ItemService {
 
     @Override
     public Item findOne(Long id, Integer quantity) {
-        return new Item(productClient.listOneProduct(id), quantity);
+        return new Item(productClient.listOneProduct(id).getMessage(), quantity);
     }
 }
